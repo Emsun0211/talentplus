@@ -15,7 +15,7 @@ const Hero = () => {
 	return (
 		<div className='bg-[#004DB3] h-[100%] pt-[7rem] px-[2rem] flex flex-col sm:flex-row justify-between'>
 			<div className='text-center sm:text-left flex justify-center flex-col w-[100%] sm:w-[50%]'>
-				<h2 className='text-[2.8rem] sm:text-[5rem] font-bold text-white leading-1 sm:leading-tight'>
+				<h2 className='text-[2.4rem] sm:text-[3rem] lg:text-[4rem] font-bold text-white leading-1 sm:leading-tight'>
 					Grow your skills to advance your career path{" "}
 				</h2>
 				<p className='text-white mt-[1rem]'>
@@ -33,9 +33,40 @@ const Hero = () => {
 					<Button text={"Enroll Now"} background={"white"} size={"140"} />
 				</div>
 				<div className='flex items-center sm:justify-start justify-center mt-[1rem]'>
-					{images.map((image) => (
-						<Image src={`/${image}`} width={40} height={40} />
-					))}
+					<Image
+						src={`/Frame95.png`}
+						width={50}
+						height={40}
+						className='w-[40px] sm:w-[50px]'
+					/>
+					<Image
+						src={`/Frame96.png`}
+						width={50}
+						height={40}
+						className='ml-[-10px] w-[40px] sm:w-[50px]'
+					/>
+					<Image
+						src={`/Frame97.png`}
+						width={50}
+						height={40}
+						className='ml-[-10px] w-[40px] sm:w-[50px]'
+					/>
+					<Image
+						src={`/Frame98.png`}
+						width={50}
+						height={40}
+						className='ml-[-10px] w-[40px] sm:w-[50px]'
+					/>
+					<Image
+						src={`/Frame99.png`}
+						width={50}
+						height={40}
+						className='ml-[-10px] w-[40px] sm:w-[50px]'
+					/>
+					<div className='text-white flex flex-col items-center ml-[10px]'>
+						<h2 className='font-bold text-[1.3rem]'>255k+</h2>
+						<p>Previews</p>
+					</div>
 				</div>
 			</div>
 			<div className='flex justify-center w-[100%] sm:w-[50%]'>

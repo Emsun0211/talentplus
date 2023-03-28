@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper-pagination {
+	margin-top: 5rem;
+	/* text-align: left;
+	display: flex; */
+}
+body {
+	text-decoration: none;
+	list-style: none;
+}
+
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;

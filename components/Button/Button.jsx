@@ -8,22 +8,24 @@ const Button = ({
 	onClick,
 	children,
 	icon,
+	borderColor,
 	...props
 }) => {
-	background =
-		background === "blue"
-			? "#004DB3"
-			: background === "white"
-			? "#FFFFFF"
-			: background;
+	background = background || "[#004DB3]";
+	// background === "blue"
+	// 	? "#004DB3"
+	// 	: background === "white"
+	// 	? "#FFFFFF"
+	// 	: background;
 	size = size || "140";
-	textColor = textColor || "#004DB3";
+	textColor = textColor || "[#004DB3]";
+	borderColor = borderColor || "white";
 
 	return (
 		<button
-			className={`p-3 bg-[${background}] text-${textColor} rounded-[5px] w-[${size}px] border-[1px] border-white ${
-				children ? "flex justify-between items-center gap-x-2" : ""
-			} `}
+			className={`p-3 bg-${background} text-${textColor}  font-[700] rounded-[5px] outline-none w-[${size}px] md:w-[${size}] border-[1px] border-${borderColor} ${
+				children ? "flex  items-center gap-x-2" : ""
+			} text-[12px] sm:text-[1rem]`}
 			onClick={() => onClick()}>
 			{text}
 			{icon}

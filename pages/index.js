@@ -6,6 +6,10 @@ import Hero from "@/components/Hero/Hero";
 import Partner from "@/components/Partners/Partner";
 import Value from "@/components/Value/Value";
 import Courses from "@/components/Courses/Courses";
+import Testimonial from "@/components/Testimonial/Testimonial";
+import Community from "@/components/Community/Community";
+import FAQ from "@/components/FAQ/FAQ";
+import Classes from "@/components/Classes/Classes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +25,12 @@ export default function Home() {
 			<main>
 				<Hero />
 				<Partner />
+				<Classes />
 				<Value />
 				<Courses />
+				<Testimonial />
+				<Community />
+				<FAQ />
 			</main>
 		</>
 	);
