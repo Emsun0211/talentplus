@@ -23,7 +23,7 @@ export const Navbar = () => {
 	const scrollBg = navbar ? "bg-[#004DB3]" : "";
 	return (
 		<div
-			className={`z-40 fixed top-0 ${scrollBg} left-0 right-0 pt-[2rem] pb-[1rem] lg:pt-[3rem] pb-2 px-[2rem]`}>
+			className={`z-40 fixed top-0 ${scrollBg} left-0 right-0 pt-[1.5rem] pb-[1rem]  pb-2 px-[2rem]`}>
 			<div className=' flex justify-between items-center  mx-auto'>
 				<div>
 					<Image src={"/techtime.png"} width={120} height={120} className='' />
