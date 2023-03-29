@@ -6,7 +6,7 @@ const Community = () => {
 	return (
 		<div className='bg-[#004DB3] flex flex-col items-center px-2 py-[2rem] lg:py-[4rem]'>
 			<div className='flex items-center flex-col text-[#fff] w-[80%] mx-auto'>
-				<p className='text-[10px] sm:text-[1rem]'>Join Our Community</p>
+				<p className='text-[10px] sm:text-[1rem]'>JOIN OUR COMMUNITY</p>
 				<h2 className='text-[1.2rem] sm:text-[2rem] lg:text-[3rem] font-bold text-center leading-normal'>
 					Are You Ready To Connect With The Future Talent of The Tech World
 				</h2>

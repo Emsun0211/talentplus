@@ -12,7 +12,7 @@ const Heading = ({ title }) => {
 				Definition, Generally any Standard Video Image
 			</p>
 			{/* Smaller screen */}
-			<p className='block sm:hidden text-center text-[8px] sm:text-[12px] lg:text-[1rem] mb-[3rem] mt-[0.7rem] text-[#A1A1A1] px-[2rem]'>
+			<p className='block sm:hidden text-center text-[10px] sm:text-[12px] lg:text-[1rem] mb-[3rem] mt-[0.7rem] text-[#A1A1A1] px-[2rem]'>
 				High-definition Video is Video of Higher Resolution and Quality than
 				Standard Definition. While there’s no Standard Meaning for High
 				Definition, Generally any Standard Video Image

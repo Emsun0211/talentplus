@@ -12,10 +12,10 @@ const ValueCard = ({ header, text, icon }) => {
 					className='w-[25px] sm:w-[30px] lg:w-[35px]'
 				/>
 			</div>
-			<h3 className='font-[700] text-[10px] sm:text-[12px] lg:text-[14px]'>
+			<h3 className='font-[700] text-[12px] sm:text-[14px] lg:text-[16px]'>
 				{header}
 			</h3>
-			<p className='text-[8px] sm:text-[12px] lg:text-[14px] text-[#A1A1A1]'>
+			<p className='text-[10px] sm:text-[12px] lg:text-[14px] text-[#A1A1A1]'>
 				{text}
 			</p>
 		</div>

@@ -9,6 +9,8 @@ const Button = ({
 	children,
 	icon,
 	borderColor,
+	hoverbg,
+	hovertext,
 	...props
 }) => {
 	background = background || "[#004DB3]";
@@ -23,7 +25,7 @@ const Button = ({
 
 	return (
 		<button
-			className={`p-3 bg-${background} text-${textColor}  font-[700] rounded-[5px] outline-none w-[${size}px] md:w-[${size}] border-[1px] border-${borderColor} ${
+			className={`p-3 bg-${background} text-${textColor} hover:text-${hovertext} hover:bg-${hoverbg}  font-[700] rounded-[5px] outline-none w-[${size}px] md:w-[${size}] border-[1px] border-${borderColor} ${
 				children ? "flex  items-center gap-x-2" : ""
 			} text-[12px] sm:text-[1rem]`}
 			onClick={() => onClick()}>

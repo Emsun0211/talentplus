@@ -4,18 +4,36 @@ import { faq } from "@/utils/faq";
 import Heading from "../Heading/Heading";
 
 const FAQ = () => {
-	const [isOpen, setIsopen] = useState(false);
+	const [Open, setopen] = useState(false);
+	const [clicked, setclicked] = useState("0");
+
+	const handleClick = (idx, id) => {
+		faq.find((faq) => {
+			if (idx === faq.id) {
+				setopen(!Open);
+			} else return;
+		});
+	};
+
+	const handleToggle = (index) => {
+		console.log(index);
+		if (clicked === index) {
+			return setclicked("0");
+		}
+		setclicked(index);
+	};
+	const textColor = Open ? "text-[#004DB3]" : "text-black";
+
 	return (
 		<div className='pt-[2rem] lg:pt-[5rem] pb-[3rem]'>
 			<Heading title={"Frequently Asked Questions"} />
 			<div className='flex flex-col items-center justify-center  mx-auto'>
 				{faq.map((faq, idx) => (
 					<FAQCard
-						isOpen={isOpen}
-						setIsopen={setIsopen}
-						key={idx}
 						faq={faq}
-						idx={idx}
+						key={idx}
+						active={clicked === idx}
+						onToggle={() => handleToggle(idx)}
 					/>
 				))}
 			</div>
